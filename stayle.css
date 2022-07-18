@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1168px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 24px;
+}
+
+.navlist li{
+    
+    cursor: pointer;
+}
+.nav{
+    display: flex;  
+    gap: 24px;
+    align-items: center;
+}
+
+.downMenu{
+    position: relative;
+    padding-right: 15px;
+}
+
+.drodDownList{
+    display: none;
+    position: absolute;
+    transition: display 1s ease;
+}
+
+.drodDownList>li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+a{  
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#222;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1.4px;
+    position: relative;
+}
+
+.downMenu:hover .drodDownList{
+    display: block; 
+}
+
+.downMenu::after{
+    content: '';
+    display: block;
+    background: url('./img/arrowDown.svg') center center no-repeat;
+    width: 8px;
+    height: 5px;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+}
+
+.btn{
+    padding: 15px 24px;
+    line-height: 20px;
+}
+
+.btn__blue{
+    background: #0A61F7;
+    border-radius: 4px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.hero{
+    background: url('./img/hero__bg.png') top left no-repeat, #F3F8FF;
+    padding: 295px 0 315px;
+    background-size: cover;
+}
+
+.hero__content{
+    text-align: center;
+}
+
+.subtext{
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #657085;
+    margin-bottom: 16px;
+}
+
+.hero__title{
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 73px;
+    letter-spacing: 1.6px;
+    color: #1C202B;
+    margin-bottom: 25px;
+}
+
+.platform>.container{
+    padding: 48px;
+    padding-bottom: 0;
+}
+
+.platform__title{
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 48px;
+    letter-spacing: 0.8px;
+    color: #1C202B;
+}
+
+.blue{
+    color: #0A61F7;
+}
+
+.platform__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.platform__buttonsGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.platform__btn{
+    display: flex;
+    border: none;
+    width: 340px;
+    padding: 19px 72px;
+    background:url('./img/platformBtn__img1.svg') center left 25px no-repeat, #EAF3FF;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.platform__text{
+    font-size: 22px;
+    line-height: 27px;
+    color: #1C202B;
+    margin: 32px 0 24px;
+}
